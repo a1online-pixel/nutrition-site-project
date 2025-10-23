@@ -48,23 +48,23 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="главная" className="pt-32 pb-20 px-4 bg-gradient-to-b from-muted to-background">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="md:text-6xl font-bold mb-6 text-foreground leading-tight text-4xl">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-foreground leading-tight">
                 Замучили диеты и срывы?
               </h2>
-              <p className="text-xl mb-4 text-muted-foreground">
+              <p className="text-lg sm:text-xl mb-3 md:mb-4 text-muted-foreground">
                 Хотите по-настоящему полюбить здоровый образ жизни?
               </p>
-              <p className="text-lg mb-8 text-foreground">
+              <p className="text-base sm:text-lg mb-6 md:mb-8 text-foreground">
                 Научимся питаться правильно и вести здоровый образ жизни, уберем вредное питание и вредные привычки, начнем новую жизнь!
               </p>
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button 
                   size="lg" 
                   onClick={() => scrollToSection("контакты")}
-                  className="text-lg px-8"
+                  className="text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto"
                 >
                   Записаться
                 </Button>
@@ -72,7 +72,7 @@ const Index = () => {
                   size="lg" 
                   variant="outline"
                   onClick={() => scrollToSection("услуги")}
-                  className="text-lg px-8"
+                  className="text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto"
                 >
                   Узнать больше
                 </Button>
