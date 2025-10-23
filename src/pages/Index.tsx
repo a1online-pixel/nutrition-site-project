@@ -51,7 +51,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
+              <h2 className="md:text-6xl font-bold mb-6 text-foreground leading-tight text-4xl">
                 Замучили диеты и срывы?
               </h2>
               <p className="text-xl mb-4 text-muted-foreground">
