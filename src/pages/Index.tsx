@@ -363,45 +363,61 @@ const Index = () => {
       {/* Contact */}
       <section id="контакты" className="py-20 px-4">
         <div className="container mx-auto max-w-2xl">
-          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Готовы начать?</h2>
-          <p className="text-center text-lg text-muted-foreground mb-12">
-            Оставьте заявку, и я свяжусь с вами для бесплатной консультации
-          </p>
-          <Card>
-            <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">Ваше имя</label>
-                  <Input 
-                    placeholder="Александр"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
+          <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Записаться на консультацию</h2>
+          <Card className="bg-gradient-to-br from-primary/5 to-secondary/5">
+            <CardContent className="pt-8">
+              <div className="space-y-6">
+                <div className="flex items-center justify-center gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                  <Icon name="Phone" className="text-primary" size={32} />
+                  <a 
+                    href="tel:+79991234567" 
+                    className="text-2xl font-bold text-foreground hover:text-primary transition-colors"
+                  >
+                    +7 (999) 123-45-67
+                  </a>
                 </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Телефон</label>
-                  <Input 
-                    type="tel"
-                    placeholder="+7 (999) 123-45-67"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    required
-                  />
+                
+                <div className="text-center">
+                  <p className="text-lg font-semibold mb-6">Свяжитесь со мной в социальных сетях:</p>
+                  <div className="flex justify-center gap-6">
+                    <a 
+                      href="https://t.me/username" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl hover:bg-primary/10 transition-all hover:scale-105"
+                    >
+                      <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
+                        <Icon name="Send" className="text-primary" size={28} />
+                      </div>
+                      <span className="font-medium">Telegram</span>
+                    </a>
+                    
+                    <a 
+                      href="https://wa.me/79991234567" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl hover:bg-primary/10 transition-all hover:scale-105"
+                    >
+                      <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
+                        <Icon name="MessageCircle" className="text-primary" size={28} />
+                      </div>
+                      <span className="font-medium">WhatsApp</span>
+                    </a>
+                    
+                    <a 
+                      href="https://instagram.com/username" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl hover:bg-primary/10 transition-all hover:scale-105"
+                    >
+                      <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
+                        <Icon name="Instagram" className="text-primary" size={28} />
+                      </div>
+                      <span className="font-medium">Instagram</span>
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Сообщение (необязательно)</label>
-                  <Textarea 
-                    placeholder="Расскажите о ваших целях..."
-                    rows={4}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  />
-                </div>
-                <Button type="submit" size="lg" className="w-full">
-                  Отправить заявку
-                </Button>
-              </form>
+              </div>
             </CardContent>
           </Card>
         </div>
