@@ -303,7 +303,7 @@ const Index = () => {
                 <img src={recipe.image} alt={recipe.title} className="w-full h-48 object-cover" />
                 <CardContent className="pt-4">
                   <h3 className="text-xl font-semibold mb-2">{recipe.title}</h3>
-                  <div className="flex gap-4 text-sm text-muted-foreground">
+                  <div className="flex gap-4 text-sm text-muted-foreground mb-3">
                     <div className="flex items-center gap-1">
                       <Icon name="Clock" size={16} />
                       <span>{recipe.time}</span>
@@ -313,6 +313,14 @@ const Index = () => {
                       <span>{recipe.calories}</span>
                     </div>
                   </div>
+                  <a 
+                    href="https://t.me/pp_zdorove" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-primary hover:underline inline-flex items-center gap-1"
+                  >
+                    Подробнее... <Icon name="ExternalLink" size={14} />
+                  </a>
                 </CardContent>
               </Card>
             ))}
