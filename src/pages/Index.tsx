@@ -181,8 +181,14 @@ const Index = () => {
       <section id="услуги" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">Услуги</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
+              {
+                title: "Консультация",
+                price: "от 500 ₽",
+                description: "Экспресс-консультация по вопросам питания и образа жизни с конкретными рекомендациями",
+                features: ["Ответы на вопросы", "Экспресс-анализ рациона", "Быстрые рекомендации", "Онлайн формат"]
+              },
               {
                 title: "Индивидуальная консультация",
                 price: "от 3 000 ₽",
@@ -196,12 +202,12 @@ const Index = () => {
                 features: ["Ежедневная поддержка", "Корректировка плана", "Ответы на вопросы 24/7", "Еженедельные созвоны"]
               }
             ].map((service, idx) => (
-              <Card key={idx} className="border-2 hover:border-primary transition-all">
-                <CardContent className="pt-6">
+              <Card key={idx} className="border-2 hover:border-primary transition-all flex flex-col">
+                <CardContent className="pt-6 flex flex-col flex-grow">
                   <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
                   <p className="text-3xl font-bold text-primary mb-4">{service.price}</p>
                   <p className="text-muted-foreground mb-6">{service.description}</p>
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 mb-6 flex-grow">
                     {service.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <Icon name="Check" className="text-primary mt-1" size={20} />
@@ -209,7 +215,7 @@ const Index = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full" onClick={() => scrollToSection("контакты")}>
+                  <Button className="w-full mt-auto" onClick={() => scrollToSection("контакты")}>
                     Записаться
                   </Button>
                 </CardContent>
