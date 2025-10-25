@@ -53,9 +53,7 @@ const Index = () => {
             <div className="animate-fade-in">
               <h2 className="sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-foreground leading-tight text-4xl">Комфортное питание без строгих диет и ограничений, для ваших целей</h2>
               <p className="text-lg sm:text-xl mb-3 md:mb-4 text-muted-foreground">снижение или набор веса, наращивание мышечной массы. </p>
-              <p className="text-base sm:text-lg mb-6 md:mb-8 text-foreground">
-                Научимся питаться правильно и вести здоровый образ жизни, уберем вредное питание и вредные привычки, начнем новую жизнь!
-              </p>
+              <p className="text-base sm:text-lg mb-6 md:mb-8 text-foreground">Научимся питаться правильно, уберем несбалансированное  питание и вредные привычки, начнем новую, комфортную и здоровую жизнь!</p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button 
                   size="lg" 
