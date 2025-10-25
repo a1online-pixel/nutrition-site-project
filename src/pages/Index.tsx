@@ -123,7 +123,8 @@ const Index = () => {
       {/* Benefits */}
       <section className="py-20 px-4 bg-muted">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">🍴 Забудьте про строгие диеты и голодовки!</h2>
+          <h2 className="font-bold text-center mb-4 text-foreground text-lg">Комфортное питание без строгих диет, для ваших целей и задач!
+</h2>
           <p className="text-center text-lg text-muted-foreground mb-12">Здесь вы найдете:</p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
