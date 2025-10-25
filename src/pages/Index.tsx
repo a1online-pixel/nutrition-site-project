@@ -96,23 +96,24 @@ const Index = () => {
             </div>
             <div className="order-1 md:order-2">
               <h2 className="text-4xl font-bold mb-6 text-foreground">Обо мне</h2>
-              <p className="text-lg mb-4 text-muted-foreground">
-                Всем привет, я <span className="font-semibold text-primary">Александр Самолучшев</span> — ваш проводник в мир здорового питания!
-              </p>
-              <p className="text-base mb-4">
-                Веду здоровый образ жизни, активно занимаюсь спортом. Более <span className="font-semibold">10 лет</span> я сам экспериментирую с питанием, и теперь, как интегративный нутрициолог (обучение в Talentsy), хочу поделиться с вами своими знаниями и опытом.
-              </p>
+              <p className="text-lg mb-4 text-muted-foreground">Всем привет, я Александр Самолучшев – ваш консультант и помощник в правильном питании!
+</p>
+              <p className="text-base mb-4">Являюсь дипломированным специалистом – интегративный нутрициолог.
+Веду здоровый образ жизни, активно занимаюсь спортом. Более 15 лет я сам придерживаюсь правильного питания, и теперь, как специалист по питанию, хочу поделиться с вами своими знаниями и опытом.
+</p>
               <div className="flex items-start gap-3 mb-3">
                 <Icon name="CheckCircle" className="text-primary mt-1" size={24} />
-                <p>Более 10 лет личного опыта в здоровом питании</p>
+                <p>Более 15 лет личного опыта в здоровом питании</p>
               </div>
               <div className="flex items-start gap-3 mb-3">
                 <Icon name="CheckCircle" className="text-primary mt-1" size={24} />
-                <p>Сертифицированный интегративный нутрициолог (Talentsy)</p>
+                <p>Дипломированный интегративный нутрициолог
+</p>
               </div>
               <div className="flex items-start gap-3">
                 <Icon name="CheckCircle" className="text-primary mt-1" size={24} />
-                <p>Активный образ жизни и регулярные тренировки</p>
+                <p>Квалифицированный и индивидуальный подход к каждому клиенту
+</p>
               </div>
             </div>
           </div>
