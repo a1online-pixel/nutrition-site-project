@@ -51,9 +51,7 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-foreground leading-tight text-4xl">
-                Замучили диеты и срывы?
-              </h2>
+              <h2 className="sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-foreground leading-tight text-3xl">Комфортное питание без строгих диет и ограничений, для ваших целей</h2>
               <p className="text-lg sm:text-xl mb-3 md:mb-4 text-muted-foreground">
                 Хотите по-настоящему полюбить здоровый образ жизни?
               </p>
