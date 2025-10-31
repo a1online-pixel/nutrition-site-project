@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nutrition-site-project.poehali.dev/</loc>
+    <loc>https://samlivestyle.ru/</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nutrition-site-project.poehali.dev/#главная</loc>
+    <loc>https://samlivestyle.ru/#главная</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nutrition-site-project.poehali.dev/#обо-мне</loc>
+    <loc>https://samlivestyle.ru/#обо-мне</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nutrition-site-project.poehali.dev/#услуги</loc>
+    <loc>https://samlivestyle.ru/#услуги</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nutrition-site-project.poehali.dev/#рецепты</loc>
+    <loc>https://samlivestyle.ru/#рецепты</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nutrition-site-project.poehali.dev/#отзывы</loc>
+    <loc>https://samlivestyle.ru/#отзывы</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nutrition-site-project.poehali.dev/#контакты</loc>
+    <loc>https://samlivestyle.ru/#контакты</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

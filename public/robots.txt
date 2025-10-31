@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nutrition-site-project.poehali.dev/sitemap.xml
+Sitemap: https://samlivestyle.ru/sitemap.xml
