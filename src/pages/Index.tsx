@@ -311,7 +311,7 @@ const Index = () => {
                 image: "https://cdn.poehali.dev/projects/93ea748e-5d12-4c14-b5de-218bd51e0cc1/files/2151f409-cc64-4edf-a240-b5cfed8cad2b.jpg"
               }
             ].map((post, idx) => (
-              <Card key={idx} className="overflow-hidden hover:shadow-xl transition-shadow bg-muted flex flex-col">
+              <Card key={idx} className="overflow-hidden hover:shadow-xl transition-shadow bg-muted/40 flex flex-col">
                 <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
                 <CardContent className="pt-4 flex flex-col flex-grow text-center">
                   <h3 className="text-xl font-bold mb-3 text-primary">{post.title}</h3>
