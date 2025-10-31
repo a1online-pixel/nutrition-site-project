@@ -302,13 +302,13 @@ const Index = () => {
             ].map((post, idx) => (
               <Card key={idx} className="overflow-hidden hover:shadow-xl transition-shadow bg-muted flex flex-col">
                 <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
-                <CardContent className="pt-4 flex flex-col flex-grow">
+                <CardContent className="pt-4 flex flex-col flex-grow text-center">
                   <h3 className="text-xl font-bold mb-3 text-primary">{post.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4 flex-grow line-clamp-6">{post.description}</p>
+                  <p className="text-sm text-muted-foreground mb-6 flex-grow line-clamp-6">{post.description}</p>
                   <Button 
                     asChild
                     size="sm"
-                    className="w-auto mx-auto bg-primary hover:bg-primary/90"
+                    className="w-auto mx-auto mt-2 bg-primary hover:bg-primary/90"
                   >
                     <a 
                       href={post.link} 
