@@ -261,7 +261,7 @@ const Index = () => {
                 title: "Расширенный",
                 duration: "1 месяц",
                 price: "15 000 ₽",
-                description: "Полная перезагрузка образа жизни и питания."
+                description: "Полная перезагрузка образа жизни и рациона питания."
               }
             ].map((program, idx) => (
               <Card key={idx} className={`${program.popular ? 'border-2 border-primary shadow-xl scale-105' : ''} hover:shadow-lg transition-all`}>
