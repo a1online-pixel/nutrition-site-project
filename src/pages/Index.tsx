@@ -234,7 +234,7 @@ const Index = () => {
       <section id="программы" className="py-20 px-4 bg-muted">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-foreground">Индивидуальная программа питания</h2>
-          <p className="text-center text-lg text-muted-foreground mb-12">Комплексные программы для достижения ваших целей</p>
+          <p className="text-center text-lg text-muted-foreground mb-12">Составлю комплексное меню для достижение ваших целей</p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
