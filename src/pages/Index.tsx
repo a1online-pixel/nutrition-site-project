@@ -17,8 +17,15 @@ const Index = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const trackGoal = (goal: string) => {
+    if (typeof window !== 'undefined' && (window as any).ym) {
+      (window as any).ym(105007687, 'reachGoal', goal);
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackGoal('form_submit');
     console.log("Form submitted:", formData);
     alert("Спасибо за заявку! Я свяжусь с вами в ближайшее время.");
     setFormData({ name: "", phone: "", message: "" });
@@ -268,7 +275,7 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground mb-2">{program.duration}</p>
                   <p className="text-3xl font-bold text-primary mb-4">{program.price}</p>
                   <p className="text-muted-foreground mb-6">{program.description}</p>
-                  <Button className="w-full" variant={program.popular ? "default" : "outline"} onClick={() => scrollToSection("контакты")}>
+                  <Button className="w-full" variant={program.popular ? "default" : "outline"} onClick={() => { trackGoal('select_program'); scrollToSection("контакты"); }}>
                     Выбрать программу
                   </Button>
                 </CardContent>
@@ -389,6 +396,7 @@ const Index = () => {
                   <a 
                     href="tel:+79997675795" 
                     className="text-2xl font-bold text-foreground hover:text-primary transition-colors"
+                    onClick={() => trackGoal('phone_click')}
                   >
                     +7 (999) 767-57-95
                   </a>
@@ -402,6 +410,7 @@ const Index = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl hover:bg-primary/10 transition-all hover:scale-105"
+                      onClick={() => trackGoal('telegram_click')}
                     >
                       <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
                         <Icon name="Send" className="text-primary" size={28} />
@@ -414,6 +423,7 @@ const Index = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl hover:bg-primary/10 transition-all hover:scale-105"
+                      onClick={() => trackGoal('whatsapp_click')}
                     >
                       <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
                         <Icon name="MessageCircle" className="text-primary" size={28} />
