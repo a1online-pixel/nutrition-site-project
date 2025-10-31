@@ -380,10 +380,10 @@ const Index = () => {
                 <div className="flex items-center justify-center gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
                   <Icon name="Phone" className="text-primary" size={32} />
                   <a 
-                    href="tel:+79991234567" 
+                    href="tel:+79997675795" 
                     className="text-2xl font-bold text-foreground hover:text-primary transition-colors"
                   >
-                    +7 (999) 123-45-67
+                    +7 (999) 767-57-95
                   </a>
                 </div>
                 
@@ -391,7 +391,7 @@ const Index = () => {
                   <p className="text-lg font-semibold mb-6">Свяжитесь со мной в социальных сетях:</p>
                   <div className="flex justify-center gap-6">
                     <a 
-                      href="https://t.me/username" 
+                      href="https://t.me/alexdmzozh" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl hover:bg-primary/10 transition-all hover:scale-105"
@@ -403,7 +403,7 @@ const Index = () => {
                     </a>
                     
                     <a 
-                      href="https://wa.me/79991234567" 
+                      href="https://wa.me/79997675795" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl hover:bg-primary/10 transition-all hover:scale-105"
@@ -415,15 +415,15 @@ const Index = () => {
                     </a>
                     
                     <a 
-                      href="https://instagram.com/username" 
+                      href="https://vk.com/id1054107144" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex flex-col items-center gap-2 p-4 bg-white rounded-xl hover:bg-primary/10 transition-all hover:scale-105"
                     >
                       <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center">
-                        <Icon name="Instagram" className="text-primary" size={28} />
+                        <Icon name="Circle" className="text-primary" size={28} />
                       </div>
-                      <span className="font-medium">Instagram</span>
+                      <span className="font-medium">VKontakte</span>
                     </a>
                   </div>
                 </div>
