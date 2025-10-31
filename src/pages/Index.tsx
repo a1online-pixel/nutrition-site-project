@@ -186,13 +186,13 @@ const Index = () => {
                 features: ["Анализ фактического рациона и режима питания", "Ответы на вопросы", "Индивидуальные рекомендации по вашему запросу", "Онлайн формат"]
               },
               {
-                title: "Ведение и персональное сопровождение",
+                title: "Ведение и персональное\nсопровождение",
                 price: "от 2 000 ₽",
                 description: "Постоянная поддержка, корректировка рациона и мотивация на пути к вашим целям",
                 features: ["Расчет суточной потребности КБЖУ персонально для вас", "Ежедневное сопровождение в мессенджерах", "Корректировка плана при необходимости", "Встречи по договоренности"]
               },
               {
-                title: "Составление плана питания по вашему запросу",
+                title: "Составление плана питания\nпо вашему запросу",
                 price: "от 1000 ₽",
                 description: "Составление рациона и режима питания, с учетом ваших запросов и пожеланий",
                 features: ["Подбор персонального питания под ваши цели", "Подбор продуктов и блюд персонально для вас", "Подбор режима питания", "Индивидуальная корректировка питания по вашему желанию"]
@@ -200,7 +200,7 @@ const Index = () => {
             ].map((service, idx) => (
               <Card key={idx} className="border-2 hover:border-primary transition-all flex flex-col">
                 <CardContent className="pt-6 flex flex-col flex-grow">
-                  <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+                  <h3 className="text-2xl font-bold mb-2 whitespace-pre-line">{service.title}</h3>
                   <p className="text-3xl font-bold text-primary mb-4">{service.price}</p>
                   <p className="text-muted-foreground mb-6">{service.description}</p>
                   <ul className="space-y-2 mb-6 flex-grow">
