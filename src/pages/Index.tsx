@@ -238,23 +238,23 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Старт",
-                duration: "1 месяц",
-                price: "8 000 ₽",
-                description: "Идеально для первого знакомства со здоровым питанием"
+                title: "Начальный",
+                duration: "1 день",
+                price: "1 000 ₽",
+                description: "Идеально подходит для ознакомления с правильным питанием."
               },
               {
-                title: "Оптима",
-                duration: "2 месяца",
-                price: "14 000 ₽",
-                description: "Сформируем устойчивые привычки здорового питания",
+                title: "Оптимальный",
+                duration: "1 неделя",
+                price: "5 000 ₽",
+                description: "Сформируется устойчивые привычки правильного питания.",
                 popular: true
               },
               {
-                title: "Трансформация",
-                duration: "3 месяца",
-                price: "20 000 ₽",
-                description: "Полная перезагрузка образа жизни и питания"
+                title: "Расширенный",
+                duration: "1 месяц",
+                price: "15 000 ₽",
+                description: "Полная перезагрузка образа жизни и питания."
               }
             ].map((program, idx) => (
               <Card key={idx} className={`${program.popular ? 'border-2 border-primary shadow-xl scale-105' : ''} hover:shadow-lg transition-all`}>
