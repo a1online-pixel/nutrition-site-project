@@ -32,10 +32,10 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-primary">Александр Самолучшев</h1>
             <div className="hidden md:flex gap-6">
-              {["Главная", "Обо мне", "Услуги", "Программы", "Рецепты", "Отзывы", "Контакты"].map((item, idx) => (
+              {["Главная", "Обо мне", "Услуги", "Полезная информация", "Отзывы", "Контакты"].map((item, idx) => (
                 <button
                   key={idx}
-                  onClick={() => scrollToSection(item.toLowerCase().replace(" ", "-"))}
+                  onClick={() => scrollToSection(item === "Полезная информация" ? "рецепты" : item.toLowerCase().replace(" ", "-"))}
                   className="text-foreground hover:text-primary transition-colors font-medium"
                 >
                   {item}
@@ -110,10 +110,14 @@ const Index = () => {
                 <p>Дипломированный интегративный нутрициолог
 </p>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 mb-3">
                 <Icon name="CheckCircle" className="text-primary mt-1" size={24} />
                 <p>Квалифицированный и индивидуальный подход к каждому клиенту
 </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Icon name="CheckCircle" className="text-primary mt-1" size={24} />
+                <p>Активный образ жизни и регулярные тренировки</p>
               </div>
             </div>
           </div>
@@ -344,14 +348,14 @@ const Index = () => {
                 text: "Впервые в жизни диета не казалась мучением. Спасибо за понятные советы и постоянную поддержку!"
               },
               {
-                name: "Елена, 28 лет",
-                result: "–8 кг за 2 месяца",
-                text: "Научилась готовить вкусные и полезные блюда. Муж в восторге, а я довольна своим отражением в зеркале!"
-              },
-              {
                 name: "Сергей, 38 лет",
                 result: "–10 кг за 3 месяца",
                 text: "Профессиональный подход, внимание к деталям. Результат превзошел ожидания!"
+              },
+              {
+                name: "Елена, 28 лет",
+                result: "–8 кг за 2 месяца",
+                text: "Научилась готовить вкусные и полезные блюда. Муж в восторге, а я довольна своим отражением в зеркале!"
               }
             ].map((testimonial, idx) => (
               <Card key={idx} className="hover:shadow-lg transition-shadow">
