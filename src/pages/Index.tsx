@@ -283,31 +283,32 @@ const Index = () => {
             {[
               {
                 title: "Снижение калорийности в питании",
-                description: "Снижение калорийности питания играет важную роль в поддержании здоровья и нормального веса тела. Избыточное потребление калорий ведет к накоплению жира и увеличению массы тела, снижая количество потребляемых калорий, можно предотвратить ожирение. Ожирение увеличивает риск сердечно-сосудистых заболеваний, включая гипертонию, атеросклероз и ишемическую болезнь сердца, сокращение калорий помогает снизить этот риск.",
+                description: "Снижение калорийности питания играет важную роль в поддержании здоровья и нормального веса тела. Избыточное потребление калорий ведет к накоплению жира и увеличению массы тела...",
                 link: "https://t.me/pp_zdorove/220",
                 image: "https://cdn.poehali.dev/projects/93ea748e-5d12-4c14-b5de-218bd51e0cc1/files/3735871d-23de-44d1-ae83-b188adf9e11f.jpg"
               },
               {
                 title: "Углеводы при занятии спортом",
-                description: "Углеводы важны для тренировок, так как обеспечивают организм энергией, необходимой для физической активности. В процессе упражнений углеводы, которые накапливаются в мышцах (в форме гликогена), расщепляются до глюкозы (сахара) и поступают в мышцы для обеспечения их энергией. Чем интенсивнее тренировка, тем в большей степени тело полагается на углеводы как на источник энергии.",
+                description: "Углеводы важны для тренировок, так как обеспечивают организм энергией, необходимой для физической активности. В процессе упражнений углеводы расщепляются до глюкозы и поступают в мышцы...",
                 link: "https://t.me/pp_zdorove/222",
                 image: "https://cdn.poehali.dev/projects/93ea748e-5d12-4c14-b5de-218bd51e0cc1/files/dabdc822-04e1-477c-b45c-5e9f0b0216ef.jpg"
               },
               {
                 title: "Алиментарно-зависимые заболевания",
-                description: "Алиментарно-зависимые заболевания — это группа заболеваний, развитие которых связано с нарушением питания организма, такие болезни возникают вследствие неправильного рациона, недостатка витаминов, минералов и питательных веществ либо избытка вредных компонентов пищи.",
+                description: "Алиментарно-зависимые заболевания — это группа заболеваний, развитие которых связано с нарушением питания организма, такие болезни возникают вследствие неправильного рациона...",
                 link: "https://t.me/pp_zdorove/221",
                 image: "https://cdn.poehali.dev/projects/93ea748e-5d12-4c14-b5de-218bd51e0cc1/files/2151f409-cc64-4edf-a240-b5cfed8cad2b.jpg"
               }
             ].map((post, idx) => (
-              <Card key={idx} className="overflow-hidden hover:shadow-xl transition-shadow bg-gradient-to-br from-blue-50 to-white flex flex-col">
+              <Card key={idx} className="overflow-hidden hover:shadow-xl transition-shadow bg-muted flex flex-col">
                 <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
                 <CardContent className="pt-4 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold mb-3 text-primary">{post.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4 flex-grow">{post.description}</p>
+                  <p className="text-sm text-muted-foreground mb-4 flex-grow line-clamp-6">{post.description}</p>
                   <Button 
                     asChild
-                    className="w-full bg-[#0088cc] hover:bg-[#0077b3]"
+                    size="sm"
+                    className="w-auto mx-auto bg-primary hover:bg-primary/90"
                   >
                     <a 
                       href={post.link} 
@@ -315,7 +316,7 @@ const Index = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2"
                     >
-                      <Icon name="Send" size={18} />
+                      <Icon name="Send" size={16} />
                       Читать в Telegram
                     </a>
                   </Button>
